@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - 8086:5000
+    volumes:
+      - '.:/home/app'
+  database:
+    image: redis
